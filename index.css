@@ -1,0 +1,39 @@
+/* Boilerplate */
+*{
+    box-sizing: border-box;
+}
+body{
+    /* So elements can take up the full width */
+   margin: 0; 
+}
+.progress{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: red;
+    width: 0;
+    transition: width 0.1s ease-in-out;
+    z-index: 9999;
+}
+main{
+    /* Needed to offset the 5px height of the progress bar! */
+    margin-top: 5px;
+}
+.height-div{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.height-div:nth-child(even){
+    background: black;
+    color: white;   
+}
+footer{
+    height: 150px;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
